@@ -17,3 +17,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: |
           npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.MY_NPM_TOKEN }}
